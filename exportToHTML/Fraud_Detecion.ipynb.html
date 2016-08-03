@@ -1,0 +1,85 @@
+<html>
+<head>
+<title>Fraud_Detecion.ipynb</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,0); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Fraud_Detecion.ipynb</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">{ 
+ &quot;cells&quot;: [ 
+  { 
+   &quot;cell_type&quot;: &quot;code&quot;, 
+   &quot;execution_count&quot;: null, 
+   &quot;metadata&quot;: { 
+    &quot;collapsed&quot;: true 
+   }, 
+   &quot;outputs&quot;: [], 
+   &quot;source&quot;: [ 
+    &quot;%pylab inline\n&quot;, 
+    &quot;import pickle\n&quot;, 
+    &quot;\n&quot;, 
+    &quot;import pandas as pd\n&quot;, 
+    &quot;import numpy as np\n&quot;, 
+    &quot;import matplotlib as pl\n&quot;, 
+    &quot;\n&quot;, 
+    &quot;import matplotlib.patches as mpatches\n&quot;, 
+    &quot;import matplotlib.pyplot as plt\n&quot;, 
+    &quot;import seaborn as sns\n&quot;, 
+    &quot;from pylab import fill_between&quot; 
+   ] 
+  }, 
+  { 
+   &quot;cell_type&quot;: &quot;code&quot;, 
+   &quot;execution_count&quot;: null, 
+   &quot;metadata&quot;: {}, 
+   &quot;outputs&quot;: [], 
+   &quot;source&quot;: [ 
+    &quot;df = pd.read_pickle(\&quot;/Users/karansagoo/PycharmProjects/Resume/ENRON_final1/data/enron_pd.pkl\&quot;)\n&quot;, 
+    &quot;df.drop([\&quot;name\&quot;,\&quot;email_address\&quot;], axis = 1, inplace = True)\n&quot;, 
+    &quot;cols = df.columns\n&quot;, 
+    &quot;df = df.astype(float)\n&quot;, 
+    &quot;df.plot(x = 'salary', y = 'bonus',kind = 'scatter')&quot; 
+   ] 
+  }, 
+  { 
+   &quot;cell_type&quot;: &quot;code&quot;, 
+   &quot;execution_count&quot;: null, 
+   &quot;outputs&quot;: [], 
+   &quot;source&quot;: [ 
+    &quot;&quot; 
+   ] 
+  } 
+ ], 
+ &quot;metadata&quot;: { 
+  &quot;kernelspec&quot;: { 
+   &quot;display_name&quot;: &quot;Python 2&quot;, 
+   &quot;language&quot;: &quot;python&quot;, 
+   &quot;name&quot;: &quot;python2&quot; 
+  }, 
+  &quot;language_info&quot;: { 
+   &quot;codemirror_mode&quot;: { 
+    &quot;name&quot;: &quot;ipython&quot;, 
+    &quot;version&quot;: 2.0 
+   }, 
+   &quot;file_extension&quot;: &quot;.py&quot;, 
+   &quot;mimetype&quot;: &quot;text/x-python&quot;, 
+   &quot;name&quot;: &quot;python&quot;, 
+   &quot;nbconvert_exporter&quot;: &quot;python&quot;, 
+   &quot;pygments_lexer&quot;: &quot;ipython2&quot;, 
+   &quot;version&quot;: &quot;2.7.6&quot; 
+  } 
+ }, 
+ &quot;nbformat&quot;: 4, 
+ &quot;nbformat_minor&quot;: 0 
+}</span></pre>
+</body>
+</html>
